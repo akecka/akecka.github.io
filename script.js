@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var apiRoot = 'http://boiling-shelf-86612.herokuapp.com/v1/task/';
+  var apiRoot = 'https://boiling-shelf-86612.herokuapp.com/v1/task/';
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   var tasksContainer = $('[data-tasks-container]');
 
