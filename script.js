@@ -70,7 +70,7 @@ $(document).ready(function() {
     var requestUrl = apiRoot + 'deleteTask';
 
     $.ajax({
-      url: requestUrl + '/7' + $.param({
+      url: requestUrl + '/deleteTask' + $.param({
         taskId: taskId
       }),
       method: 'DELETE',
