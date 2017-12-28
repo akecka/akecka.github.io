@@ -16,6 +16,7 @@ $(document).ready(function() {
     element.find('[data-task-content-section] [data-task-content-paragraph]').text(data.content);
     element.find('[data-task-content-section] [data-task-content-input]').val(data.content);
 
+	
     return element;
   }
 
