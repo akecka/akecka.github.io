@@ -56,6 +56,7 @@ $(document).ready(function() {
         content: taskContent
       }),
       success: function(data) {
+
         parentEl.attr('data-task-id', data.id).toggleClass('datatable__row--editing');
         parentEl.find('[data-task-name-paragraph]').text(taskTitle);
         parentEl.find('[data-task-content-paragraph]').text(taskContent);
@@ -69,7 +70,7 @@ $(document).ready(function() {
     var requestUrl = apiRoot + 'deleteTask';
 
     $.ajax({
-      url: requestUrl + '/?' + $.param({
+      url: requestUrl + '/taskId' + $.param({
         taskId: taskId
       }),
       method: 'DELETE',
