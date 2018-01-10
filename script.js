@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  const apiRoot = 'http://boiling-shelf-86612.herokuapp.com/v1/task/';
+  const apiRoot = 'https://boiling-shelf-86612.herokuapp.com/v1/task/';
   const trelloApiRoot = 'https://api.trello.com/1/client.js?key=8ee265dfa649a005b1862add120f1fc4';
   const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   const $tasksContainer = $('[data-tasks-container]');
